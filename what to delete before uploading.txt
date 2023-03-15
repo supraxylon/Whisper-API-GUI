@@ -1,0 +1,2 @@
+folders: _pychache_, thisVenv, flagged
+Contents of Audio, output text, and tmp

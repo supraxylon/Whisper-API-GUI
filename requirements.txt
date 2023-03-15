@@ -1,0 +1,8 @@
+openai
+tk
+pydub
+pyaudio
+ffmpeg
+ffmpeg-python
+gradio
+numpy
