@@ -9,7 +9,7 @@ accessible to others so I want the app to be installable via one click. When ent
 you cant just activate it outright you must call it from the batch file via 
 "call %CD%/whateveryounamedyourvenv/Scripts/activate.bat" and then you can install your requirements file
 
-This relies on FFMPEG which can be ionstalled from https://ffmpeg.org/
+This relies on FFMPEG which can be installed from https://ffmpeg.org/
 
 future improvments i could make would be to split the file into 24mb sizes with 10 seconds of 
 additional overlap to account for split words for example:
