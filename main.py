@@ -27,11 +27,12 @@ def loadAudioFile(inputFile, subtitleTime, outputSRT,APIkey):
         if outputSRT == False:
             transcript = transcript + transcribed
         else:
-            if len(transcribed) > 10:
-                for j in range(0, math.ceil(len(transcribed)/2) + 9):
-                    print("j: " + str(j) + " " + transcribed[j])
-                    if transcribed[j] == " ":
-                        transcribed[j].replace(" ", "\n" )
+            j = int(math.ceil(len(transcribed)/2))
+            while j > 0:
+                if transcribed[j] == " ":
+                    transcribed = transcribed[0:j] + "\n" + transcribed[j+1:len(transcribed)]
+                    transcribed = 0
+                    transcribed-=1
             transcript = transcript + str(i+1) + "\n" + fromTimeToTime + "\n" + transcribed + "\n" + "\n"
     return transcript
 
